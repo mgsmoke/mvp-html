@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текущая дата</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1 class="greeting" id="greeting" ></h1>
+        </header>
+
+        <main class="app-main">
+            <div class="date-container" id="current-date"></div>
+
+            <div class="habbits-container">
+                <div class="habit green">
+                    <div class="habit-dot"></div>
+                    <div class="habit-bar">
+                        <span class="habit-text">Пить воду</span>
+                    </div>
+                </div>
+            </div>
+                  
+            <ul class="task-list" id="itemList"></ul>
+
+            <button class="plus-button" id="plus-button">
+                <img src="/img/plus.png">
+            </button>
+            
+            <div id="add-buttons" class="add-buttons">
+                <button class="add-btn" id="addEvent-btn">Создать событие</button>
+                <button class="add-btn">Создать заметку</button>
+            </div>
+
+            <div class="btn-overlay" id="btn-overlay"></div>
+
+            <div id="addEvent-overlay" class="addEvent-overlay">
+                <div class="addEvent-content">
+                  <span class="addEvent-close">&times;</span>
+                  <p>Добавить задачу</p>
+                  <input type="text" id="itemInput" placeholder="Введите текст">
+                  <button id="addButton">Добавить</button>
+                </div>
+            </div>
+        </main>
+
+        <nav class="app-nav">
+            <button class="nav-button" id="nav-list">
+                <img src="img/list.png" class="nav-icon" alt="Список">
+            </button>
+            <button class="nav-button" id="nav-calendar">
+                <img src="img/plan.png" class="nav-icon" alt="План">
+            </button>
+            <button class="nav-button" id="nav-ai">
+                <img src="img/icon.png" class="nav-icon" alt="ИИ">
+            </button>
+        </nav>
+    </div>
+</body>
+</html>

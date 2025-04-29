@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текущая дата</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1 class="greeting" id="greeting" ></h1>
+        </header>
+
+        <main class="app-main">
+            <div class="date-container" id="current-date"></div>
+
+            <button class="clndr-button" id="calendar-button">
+                <img src="img/calendar.png">
+            </button>
+
+            <div id="modal-overlay" class="modal-overlay">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="calendar-container">
+
+                        <div class="calendar-header">
+                            <button id="prev-month" class="nav-arrow">
+                                <img src="img/back-arrow.png" alt="Предыдущий">
+                            </button>
+                            <h3 id="current-month"></h3>
+                            <button id="next-month" class="nav-arrow">
+                                <img src="img/arrow.png" alt="Следующий">
+                            </button>
+                        </div>
+                        
+                        <div class="calendar-grid" id="calendar-grid">
+                            <div class="calendar-day-name">Пн</div>
+                            <div class="calendar-day-name">Вт</div>
+                            <div class="calendar-day-name">Ср</div>
+                            <div class="calendar-day-name">Чт</div>
+                            <div class="calendar-day-name">Пт</div>
+                            <div class="calendar-day-name">Сб</div>
+                            <div class="calendar-day-name">Вс</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="app-nav">
+            <button class="nav-button" id="nav-list">
+                <img src="img/list.png" class="nav-icon" alt="Список">
+            </button>
+            <button class="nav-button" id="nav-calendar">
+                <img src="img/plan.png" class="nav-icon" alt="План">
+            </button>
+            <button class="nav-button" id="nav-ai">
+                <img src="img/icon.png" class="nav-icon" alt="ИИ">
+            </button>
+        </nav>
+    </div>
+</body>
+</html>
